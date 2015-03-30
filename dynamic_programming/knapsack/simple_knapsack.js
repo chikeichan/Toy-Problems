@@ -13,11 +13,9 @@ knapsack(11,[[1,1],[2,3],[3,6],[4,10],[5,13]]) =======> 27
 function knapsack(capacity,items){
   //Object to store optimal values of different capacity
   var best = {};
-  var c = 1;
 
   //Find optimal value based on given capacity
   var recurse = function(cap){
-    c++;
     //Base case
     if(cap <= 0 )  return 0;
 
